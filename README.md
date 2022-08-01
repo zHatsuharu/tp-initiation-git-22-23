@@ -20,17 +20,17 @@ Le TP se fera en 2 parties. Dans la première, vous manipulerez sur un repositor
 L'objectif de cette partie est de vous familiarisez avec l'outil **Git** afin de comprendre son fonctionnement et de pouvoir l'utiliser dans des projets de groupe.
 
 ## Création de votre repository
-<<<<<<< HEAD
 Sur **Gitea**, vous pouvez créer un nouveau repository avec le bouton suivant :\
-![](./images/create_repo.png)\
-Il se situe en haut à droite de la page.
+![](./images/create_repo.png)
+> Il se situe en haut à droite de la page.
 
 Appelez votre repo **tp-git-initiation**
 
 Une fois votre repo de créer, nous pouvons commencer le TP
 
 ## Début du TP
-> En cas de soucie, une doc récapitulative se situe [ici](./doc/).
+> En cas de soucie, une doc récapitulative se situe [ici](./doc/).\
+> À chaque étape, vérifiez votre repo via Gitea pour confirmer les modifications.
 1. Cloner votre repository
 2. Créer un fichier quelconque dans le dossier du repository sur votre pc.
     - Un dossier a du être créer à l'endroit où vous avez cloné votre repo.
@@ -39,4 +39,6 @@ Une fois votre repo de créer, nous pouvons commencer le TP
 5. Maintenant, il faut **revert** votre commit.
     - L'objectif et de revenir un pas en arrière, donc l'étape 4 sera annulé.
     - Vous devez avoir à ce point, seulement le fichier de l'étape 3 dans votre repo.
-6. 
+6. Créer une branche et sélectionner la.
+7. Effectuer un commit (création d'un fichier)
+8. Faites un merge vers la branche **main** .
