@@ -20,6 +20,7 @@ Le TP se fera en 2 parties. Dans la première, vous manipulerez sur un repositor
 L'objectif de cette partie est de vous familiarisez avec l'outil **Git** afin de comprendre son fonctionnement et de pouvoir l'utiliser dans des projets de groupe.
 
 ## Création de votre repository
+<<<<<<< HEAD
 Sur **Gitea**, vous pouvez créer un nouveau repository avec le bouton suivant :\
 ![](./images/create_repo.png)\
 Il se situe en haut à droite de la page.
