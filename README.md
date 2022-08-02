@@ -19,6 +19,9 @@ Le TP se fera en 2 parties. Dans la première, vous manipulerez sur un repositor
     - [Création du repository](#création-de-votre-repository)
     - [Manipulation](#manipulation)
 - [TP Partie 2](#partie-2---travailler-en-groupe)
+    - [Objectif](#objectif-1)
+    - [Repository du groupe](#repository-du-groupe)
+    - [Manipulation](#manipulation-1)
 
 # Partie 1 - Familiarisation
 ## Objectif
@@ -29,9 +32,10 @@ Sur **Gitea**, vous pouvez créer un nouveau repository avec le bouton suivant :
 ![](./images/create_repo.png)
 > Il se situe en haut à droite de la page.
 
-Appelez votre repo **tp-git-initiation**
+Appeler votre repo **tp-git-initiation**
+> Pas besoin de modifier les autres options, donnez lui juste un nom.
 
-Une fois votre repo de créer, nous pouvons commencer le TP.
+Une fois créer, nous pouvons commencer le TP.
 
 ## Manipulation
 > En cas de soucie, une doc récapitulative se situe [ici](./doc/).\
@@ -51,3 +55,18 @@ Une fois votre repo de créer, nous pouvons commencer le TP.
 Bien, maintenant que vous avez fait cette première partie en étant seul, vous allez vous mettre un peu plus dans la plus grande utilisation de Git : un travail de groupe.
 
 # Partie 2 - Travailler en groupe
+## Objectif
+Dans cette deuxième partie, vous allez devoir utiliser Git dans un groupe. Ainsi, vous verrez l'utilisation au sein d'une équipe.
+> Il s'agira d'un petit projet, mais imaginez son utilisation à plus grande échelle.
+
+## Repository du groupe
+Toujours sur **Gitea**, un membre du groupe doit créer un repo (et uniquement un seul membre).
+> Pour ceux qui ne font pas le repo, suivez quand même cette partie.
+
+Une fois le repo de créer, tu auras un bouton qui permettra l'accès aux paramètres du repo en haut à droite :\
+![](./images/settings_repo.png)\
+Dans les paramètres, un onglet **Collaborators** permet de gérer les collaborateurs de ton repo. Ajoutez les autres membres du groupe et mettez les en **Write**.
+> `Read` : Peut seulement voir le repo, ne peut pas agir dessus.\
+> `Write` : Peut lire et modifier le repo.\
+> `Administrator` : Peut lire, modifier et changer la configuration du repo.
+## Manipulation
