@@ -1,4 +1,4 @@
-# TP Initiation GIT
+# TP Initiation GIT <img style="filter: invert(1);" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/git-alt.svg" width="25" height="25">
 
 Bienvenu(e) sur Github !
 
@@ -59,6 +59,8 @@ Bien, maintenant que vous avez fait cette première partie en étant seul, vous 
 Dans cette deuxième partie, vous allez devoir utiliser Git dans un groupe. Ainsi, vous verrez l'utilisation au sein d'une équipe.
 > Il s'agira d'un petit projet, mais imaginez son utilisation à plus grande échelle.
 
+Mettez vous en groupe de **4 à 6 personnes**.
+
 ## Repository du groupe
 Toujours sur **Gitea**, un membre du groupe doit créer un repo (et uniquement un seul membre).
 > Pour ceux qui ne font pas le repo, suivez quand même cette partie.
@@ -76,4 +78,38 @@ Dans les paramètres, un onglet **Collaborators** permet de gérer les collabora
 2. Créer un fichier avec pour nom `NOM Prénom`.
     > Mettez pas `NOM Prénom` mais votre nom suivi de votre prénom 👀\
     > Vous perdrez des points si je remarque ceci dans vos commits.
-3. 
+3. Ajoutez ce fichier au repo.
+
+
+<details>
+<summary style="cursor: pointer;">La suite une fois que vous aurez fini les étapes du dessus.</summary>
+<br>
+
+Bien, avez vous eu des difficultés ? Par exemple avec le `push` ?\
+Si vous avez pas eu de problème je vous conseille d'aller directement [ici](#aucun-soucie).
+
+---
+### Problème pour push
+C'est tout à fait normal d'avoir des problème sur ça. Vous apprenez à l'utiliser.
+
+La solution basique est qu'à chaque fois qu'une personne effectue un commit, tout le groupe fait un pull avant de faire à nouveau un commit sur la branche main.
+
+Cependant, il existe une autre solution pour éviter ces problèmes :
+1. Recréer un nouveau fichier avec cette fois `Prénom NOM`.
+2. Créer une nouvelle branche et sélectionner là.
+3. Ajouter le fichier au repo sur la branche.
+4. Effectuer un merge.
+
+---
+### Aucun soucie
+Si vous avez eu aucun soucie en effectuant des `git pull` puis des `git push`, veuillez quand même voir [la partie au dessus](#problème-pour-push). Une solution plus conseillée à utiliser est proposée.
+
+Sinon, bravo ! Vous avez fini le TP !
+<details>
+<summary style="cursor: pointer;">Vous avez votre récompense <img style="filter: invert(1);" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/gift.svg" width="16" height="16"></summary>
+
+<img src="https://c.tenor.com/P-8ZvqnS4AwAAAAC/dancing-cat-dancing-kitten.gif" width="200" height="200">
+
+> Et d'ailleurs, ce n'est pas noté <img style="filter: invert(.75);" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/face-smile-wink.svg" width="12" height="12">
+</details>
+</details>
