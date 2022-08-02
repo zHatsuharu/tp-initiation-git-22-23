@@ -102,7 +102,7 @@ Cependant, il existe une autre solution pour éviter ces problèmes :
 
 ---
 ### Aucun soucie
-Si vous avez eu aucun soucie en effectuant des `git pull` puis des `git push`, veuillez quand même voir [la partie au dessus](#problème-pour-push). Une solution plus conseillée à utiliser est proposée.
+Si vous avez eu aucun soucie en effectuant des `git pull` puis des `git push`, veuillez quand même voir [la partie au dessus](#problème-pour-push). Une solution plus adaptée est proposée.
 
 Sinon, bravo ! Vous avez fini le TP !
 <details>
