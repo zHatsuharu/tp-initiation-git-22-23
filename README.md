@@ -1,4 +1,4 @@
-# TP Initiation GIT <img style="filter: invert(1);" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/git-alt.svg" width="25" height="25">
+# TP Initiation GIT
 
 Bienvenu(e) sur Github !
 
@@ -106,10 +106,10 @@ Si vous avez eu aucun soucie en effectuant des `git pull` puis des `git push`, v
 
 Sinon, bravo ! Vous avez fini le TP !
 <details>
-<summary style="cursor: pointer;">Vous avez votre récompense <img style="filter: invert(1);" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/gift.svg" width="16" height="16"></summary>
+<summary style="cursor: pointer;">Vous avez votre récompense.</summary>
 
 <img src="https://c.tenor.com/P-8ZvqnS4AwAAAAC/dancing-cat-dancing-kitten.gif" width="200" height="200">
 
-> Et d'ailleurs, ce n'est pas noté <img style="filter: invert(.75);" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/face-smile-wink.svg" width="12" height="12">
+> Et d'ailleurs, ce n'est pas noté ;)
 </details>
 </details>
