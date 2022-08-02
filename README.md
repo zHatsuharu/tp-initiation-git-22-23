@@ -70,3 +70,10 @@ Dans les paramètres, un onglet **Collaborators** permet de gérer les collabora
 > `Write` : Peut lire et modifier le repo.\
 > `Administrator` : Peut lire, modifier et changer la configuration du repo.
 ## Manipulation
+> Chaque membre du groupe doit effectuer les étapes de leur côté.
+
+1. Cloner le repository.
+2. Créer un fichier avec pour nom `NOM Prénom`.
+    > Mettez pas `NOM Prénom` mais votre nom suivi de votre prénom 👀\
+    > Vous perdrez des points si je remarque ceci dans vos commits.
+3. 
