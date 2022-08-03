@@ -78,8 +78,10 @@ Une fois créé, nous pouvons commencer le TP.
 		![](./images/link_repo.png)
     - Un dossier a dû être créé à l'endroit où vous avez cloné votre repo.
 		- Ouvrez ce dossier avec **Visual Studio Code** (Plus couramment `VScode`).
-		- Vous pouvez télécharger VScode ici : [<img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" style="vertical-align:middle" width="25%" heigth="25%">](https://code.visualstudio.com/download)
+		- Vous pouvez télécharger VScode ici : [<img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" width="20%">](https://code.visualstudio.com/download)
 	- Toutes les étapes qui vont suivre se feront sur **VScode**.
+		- Vous pouvez ouvrir un terminal dans le menu en haut de VScode :
+		![](./images/open_terminal.png)
 2. Créez un fichier au nom de `hello.txt` dans le dossier du repository sur votre pc.
 	- Sur **VScode**,  vous pouvez créer un fichier ici :
 	![](./images/new_file.png)
@@ -87,13 +89,43 @@ Une fois créé, nous pouvons commencer le TP.
 3. Ajoutez ce fichier à votre repo (il doit apparaître sur le repo Gitea 👀).
 	- Vous pouvez vous servir de la [doc](./doc/).
 		- Il s'agit des commandes de bases (`git add`, `git commit`, `git push`)
+			- Ces commandes doivent être utilisées pour envoyer des nouveaux fichiers ou des modifications des fichiers déjà existants.
+		- En exécutant `git commit`, vous aurez certainement une erreur. Allez dans [cette partie](./doc/README.md#erreur-de-commit) pour régler ce problème.
 4. Recréez un autre fichier que vous appelerez `world.txt` et ajoutez le à votre repo.
-5. Maintenant, il faut **revert** votre commit.y
+5. Maintenant, il faut **revert** votre commit.
     - L'objectif est de revenir un pas en arrière, donc l'étape 4 sera annulée.
-    - Vous devez avoir à ce point, seulement le fichier de l'étape 3 dans votre repo.
-6. Créez une branche et la sélectionner.
-7. Effectuez un commit (création d'un fichier).
-8. Faites un merge vers la branche **main**.
+	- Si vous avez regardez la doc, la commande adapté demande un `hash`
+		- Vous trouverez ce hash sur la page **Gitea du repo** à cet endroit :
+		![](./images/where_hash.png)
+		- Sinon, vous pouvez cliquer sur `Commits` pour lister vos commits avec les hash de chacun.
+		- Quand vous allez exécuté la commande, vous aurez ceci :
+		![](./images/revert_commit.png)
+		- Pas de panique ! Vous pouvez juste fermez cette page et le commit se fera tout seul.
+		- Il ne vous restera plus qu'à push !
+    - Vous devez avoir à ce point, seulement le fichier `hello.txt` de l'étape 3 dans votre repo.
+6. Créez une branche `tomate` et sélectionnez la.
+	- Aidez vous de la [documentation](./doc/) pour ça.
+	- Pour vous assurez que vous avez bien sélectionné la branche, effectuez la commande `git status`. Vous devrez avoir ce résultat :
+	![](./images/select_branch.png)
+7. Modifiez le fichier `hello.txt`.
+	- Changez le texte par `Good bye World!`.
+8. Créez un nouveau fichier qui aura pour nom `feuille.txt`.
+9. Faites un commit avec ces modifications.
+	- Vous pouvez avoir l'erreur suivante :
+	![](./images/push_branch_error.png)
+	- Pour corriger cette erreur, faites la commande suivante :
+	```shell
+	> git push --set-upstream origin tomate
+	```
+10. Sélectionnez sur la branche **master**.
+11. Faites une modification sur le fichier `hello.txt`.
+	- Remplacez le texte par `Say Hello World!`.
+12. Faites un commit avec vos modifications.
+13. Effectuez un merge avec la branche `tomate`.
+	- À cette étape, vous êtes normalement sur la branche **master**.
+		- Faites une vérification avec la commande `git status`.
+	- Pour fusionner la branche **tomate** avec la branche **master**, faites la commande de merge trouvable dans la [documentation](./doc/).
+14. Oups ! Vous avez un conflit ( ͡° ͜ʖ ͡°)
 
 Bien, maintenant que vous avez fait cette première partie en étant seul, vous allez vous mettre un peu plus dans la plus grande utilisation de Git : un travail de groupe.
 
