@@ -29,6 +29,11 @@ Le TP se fera en 2 parties. Dans la première, vous manipulerez sur un repositor
 
 Avant de commencer, il faut s'assurer que vous avez l'outil sur votre machine.
 
+Pour cela, ouvrez un terminal.
+> Sous **Windows**, cherchez `cmd` dans la recherche de la barre des tâches.\
+> Sous **Mac**, faites le raccourci `Command + Barre d'espace` et tappez `Terminal`.\
+> Sous **Linux**, cherchez dans vos applications `Terminal`.
+
 Pour vérifier que vous avez Git, faites la commande suivante :
 ```shell
 > git --version
@@ -50,10 +55,12 @@ Les informations sont sur [cette page](https://git-scm.com/download/linux). Pren
 L'objectif de cette partie est de vous familiariser avec l'outil **Git** afin de comprendre son fonctionnement et de pouvoir l'utiliser dans des projets de groupe.
 
 ## Création de votre repository
+
+> On utilisera le mot `repo` pour dire `repository`.
+
 Sur [Gitea](https://git.ytrack.learn.ynov.com/), vous pouvez créer un nouveau repository avec le bouton suivant :
 
 ![](./images/create_repo.png)
-> Il se situe en haut à droite de la page.
 
 Appelez votre repo **tp-git-initiation**
 > Pas besoin de modifier les autres options, donnez lui juste un nom.
@@ -62,13 +69,26 @@ Une fois créé, nous pouvons commencer le TP.
 
 ## Manipulation
 > En cas de souci, une doc récapitulative se situe [ici](./doc/).\
-> À chaque étape, vérifiez votre repo via Gitea pour confirmer les modifications.
+> À chaque étape, vérifiez votre repo sur Gitea pour confirmer les modifications.
 1. Clonez votre repository.
+	- Sur votre terminal, entrez la commande `git clone <url>`.
+		- Pour ouvrir le terminal, regardez la partie [Installation](#installation). Une explication rapide s'y trouve.
+		- Vous trouverez les explications de la commande dans la [documentation](./doc/).
+		- Vous trouverez l'url ici :
+		![](./images/link_repo.png)
     - Un dossier a dû être créé à l'endroit où vous avez cloné votre repo.
-2. Créez un fichier quelconque dans le dossier du repository sur votre pc.
+		- Ouvrez ce dossier avec **Visual Studio Code** (Plus couramment `VScode`).
+		- Vous pouvez télécharger VScode ici : [<img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" style="vertical-align:middle" width="25%" heigth="25%">](https://code.visualstudio.com/download)
+	- Toutes les étapes qui vont suivre se feront sur **VScode**.
+2. Créez un fichier au nom de `hello.txt` dans le dossier du repository sur votre pc.
+	- Sur **VScode**,  vous pouvez créer un fichier ici :
+	![](./images/new_file.png)
+	- Dans ce fichier écrivez `Hello World!` et enregistrez le.
 3. Ajoutez ce fichier à votre repo (il doit apparaître sur le repo Gitea 👀).
-4. Recréez un autre fichier que vous allez ajouter aussi à votre repo.
-5. Maintenant, il faut **revert** votre commit.
+	- Vous pouvez vous servir de la [doc](./doc/).
+		- Il s'agit des commandes de bases (`git add`, `git commit`, `git push`)
+4. Recréez un autre fichier que vous appelerez `world.txt` et ajoutez le à votre repo.
+5. Maintenant, il faut **revert** votre commit.y
     - L'objectif est de revenir un pas en arrière, donc l'étape 4 sera annulée.
     - Vous devez avoir à ce point, seulement le fichier de l'étape 3 dans votre repo.
 6. Créez une branche et la sélectionner.
