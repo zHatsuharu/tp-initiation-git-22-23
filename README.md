@@ -28,7 +28,8 @@ Le TP se fera en 2 parties. Dans la première, vous manipulerez sur un repositor
 L'objectif de cette partie est de vous familiarisez avec l'outil **Git** afin de comprendre son fonctionnement et de pouvoir l'utiliser dans des projets de groupe.
 
 ## Création de votre repository
-Sur **Gitea**, vous pouvez créer un nouveau repository avec le bouton suivant :\
+Sur **Gitea**, vous pouvez créer un nouveau repository avec le bouton suivant :
+
 ![](./images/create_repo.png)
 > Il se situe en haut à droite de la page.
 
@@ -42,15 +43,15 @@ Une fois créer, nous pouvons commencer le TP.
 > À chaque étape, vérifiez votre repo via Gitea pour confirmer les modifications.
 1. Cloner votre repository.
 2. Créer un fichier quelconque dans le dossier du repository sur votre pc.
-    - Un dossier a du être créer à l'endroit où vous avez cloné votre repo.
+    - Un dossier a dû être créer à l'endroit où vous avez cloné votre repo.
 3. Ajouter ce fichier à votre repo (il doit apparaître sur le repo Gitea 👀).
 4. Recréer un autre fichier que vous allez ajouter aussi à votre repo.
 5. Maintenant, il faut **revert** votre commit.
     - L'objectif et de revenir un pas en arrière, donc l'étape 4 sera annulé.
     - Vous devez avoir à ce point, seulement le fichier de l'étape 3 dans votre repo.
-6. Créer une branche et sélectionner la.
+6. Créer une branche et la sélectionner.
 7. Effectuer un commit (création d'un fichier).
-8. Faites un merge vers la branche **main** .
+8. Faire un merge vers la branche **main** .
 
 Bien, maintenant que vous avez fait cette première partie en étant seul, vous allez vous mettre un peu plus dans la plus grande utilisation de Git : un travail de groupe.
 
@@ -65,12 +66,15 @@ Mettez vous en groupe de **4 à 6 personnes**.
 Toujours sur **Gitea**, un membre du groupe doit créer un repo (et uniquement un seul membre).
 > Pour ceux qui ne font pas le repo, suivez quand même cette partie.
 
-Une fois le repo de créer, tu auras un bouton qui permettra l'accès aux paramètres du repo en haut à droite :\
-![](./images/settings_repo.png)\
+Une fois le repo de créer, vous aurez un bouton qui permettra l'accès aux paramètres du repo en haut à droite :
+
+![](./images/settings_repo.png)
+
 Dans les paramètres, un onglet **Collaborators** permet de gérer les collaborateurs de ton repo. Ajoutez les autres membres du groupe et mettez les en **Write**.
 > `Read` : Peut seulement voir le repo, ne peut pas agir dessus.\
 > `Write` : Peut lire et modifier le repo.\
 > `Administrator` : Peut lire, modifier et changer la configuration du repo.
+
 ## Manipulation
 > Chaque membre du groupe doit effectuer les étapes de leur côté.
 
@@ -78,15 +82,14 @@ Dans les paramètres, un onglet **Collaborators** permet de gérer les collabora
 2. Créer un fichier avec pour nom `NOM Prénom`.
     > Mettez pas `NOM Prénom` mais votre nom suivi de votre prénom 👀\
     > Vous perdrez des points si je remarque ceci dans vos commits.
-3. Ajoutez ce fichier au repo.
-
+3. Ajouter ce fichier au repo.
 
 <details>
 <summary style="cursor: pointer;">La suite une fois que vous aurez fini les étapes du dessus.</summary>
 <br>
 
 Bien, avez vous eu des difficultés ? Par exemple avec le `push` ?\
-Si vous avez pas eu de problème je vous conseille d'aller directement [ici](#aucun-soucie).
+Si vous avez pas eu de problème je vous conseille d'aller directementà l'étape **Aucun soucie**.
 
 ---
 ### Problème pour push
@@ -96,13 +99,13 @@ La solution basique est qu'à chaque fois qu'une personne effectue un commit, to
 
 Cependant, il existe une autre solution pour éviter ces problèmes :
 1. Recréer un nouveau fichier avec cette fois `Prénom NOM`.
-2. Créer une nouvelle branche et sélectionner là.
+2. Créer une nouvelle branche et la sélectionner.
 3. Ajouter le fichier au repo sur la branche.
 4. Effectuer un merge.
 
 ---
 ### Aucun soucie
-Si vous avez eu aucun soucie en effectuant des `git pull` puis des `git push`, veuillez quand même voir [la partie au dessus](#problème-pour-push). Une solution plus adaptée est proposée.
+Si vous avez eu aucun soucie en effectuant des `git pull` puis des `git push`, veuillez quand même voir la partie **Problème pour push**. Une solution plus adaptée est proposée.
 
 Sinon, bravo ! Vous avez fini le TP !
 <details>
