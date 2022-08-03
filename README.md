@@ -75,15 +75,18 @@ Une fois créé, nous pouvons commencer le TP.
 		- Pour ouvrir le terminal, regardez la partie [Installation](#installation). Une explication rapide s'y trouve.
 		- Vous trouverez les explications de la commande dans la [documentation](./doc/).
 		- Vous trouverez l'url ici :
+		
 		![](./images/link_repo.png)
     - Un dossier a dû être créé à l'endroit où vous avez cloné votre repo.
 		- Ouvrez ce dossier avec **Visual Studio Code** (Plus couramment `VScode`).
 		- Vous pouvez télécharger VScode ici : [<img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" width="20%">](https://code.visualstudio.com/download)
 	- Toutes les étapes qui vont suivre se feront sur **VScode**.
 		- Vous pouvez ouvrir un terminal dans le menu en haut de VScode :
+
 		![](./images/open_terminal.png)
 2. Créez un fichier au nom de `hello.txt` dans le dossier du repository sur votre pc.
 	- Sur **VScode**,  vous pouvez créer un fichier ici :
+
 	![](./images/new_file.png)
 	- Dans ce fichier écrivez `Hello World!` et enregistrez le.
 3. Ajoutez ce fichier à votre repo (il doit apparaître sur le repo Gitea 👀).
@@ -96,9 +99,11 @@ Une fois créé, nous pouvons commencer le TP.
     - L'objectif est de revenir un pas en arrière, donc l'étape 4 sera annulée.
 	- Si vous avez regardez la doc, la commande adapté demande un `hash`
 		- Vous trouverez ce hash sur la page **Gitea du repo** à cet endroit :
+
 		![](./images/where_hash.png)
 		- Sinon, vous pouvez cliquer sur `Commits` pour lister vos commits avec les hash de chacun.
 		- Quand vous allez exécuté la commande, vous aurez ceci :
+
 		![](./images/revert_commit.png)
 		- Pas de panique ! Vous pouvez juste fermez cette page et le commit se fera tout seul.
 		- Il ne vous restera plus qu'à push !
@@ -106,12 +111,14 @@ Une fois créé, nous pouvons commencer le TP.
 6. Créez une branche `tomate` et sélectionnez la.
 	- Aidez vous de la [documentation](./doc/) pour ça.
 	- Pour vous assurez que vous avez bien sélectionné la branche, effectuez la commande `git status`. Vous devrez avoir ce résultat :
+
 	![](./images/select_branch.png)
 7. Modifiez le fichier `hello.txt`.
 	- Changez le texte par `Good bye World!`.
 8. Créez un nouveau fichier qui aura pour nom `feuille.txt`.
 9. Faites un commit avec ces modifications.
 	- Vous pouvez avoir l'erreur suivante :
+
 	![](./images/push_branch_error.png)
 	- Pour corriger cette erreur, faites la commande suivante :
 	```shell
