@@ -14,6 +14,10 @@ Le TP se fera en 2 parties. Dans la première, vous manipulerez sur un repositor
 
 - [Haut de page](#tp-initiation-git)
 - [Sommaire](#sommaire)
+- [Installation](#installation)
+    - [Windows](#windows)
+    - [Mac](#mac)
+    - [Linux](#linux)
 - [TP Partie 1](#partie-1---familiarisation)
     - [Objectif](#objectif)
     - [Création du repository](#création-de-votre-repository)
@@ -22,6 +26,26 @@ Le TP se fera en 2 parties. Dans la première, vous manipulerez sur un repositor
     - [Objectif](#objectif-1)
     - [Repository du groupe](#repository-du-groupe)
     - [Manipulation](#manipulation-1)
+
+# Installation
+
+Avant de commencer, il faut s'assurer que vous avez l'outil sur votre machine.
+
+Pour vérifier que vous avez Git, faites la commande suivante :
+```shell
+> git --version
+```
+Si vous avez une erreur, alors il faudra l'installer.
+## Windows
+Pour windows, téléchargez l'installeur via [cette page](https://git-scm.com/download/win).
+
+Pas besoin de modifier les paramètres d'installation, laissez par défaut.
+
+## Mac
+Toutes les informations se situe sur [cette page](https://git-scm.com/download/mac).
+
+## Linux
+Les informations sont sur [cette page](https://git-scm.com/download/linux). Prenez bien la commande en fonction de votre distribution.
 
 # Partie 1 - Familiarisation
 ## Objectif
