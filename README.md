@@ -25,6 +25,26 @@ Le TP se fera en 2 parties. Dans la première, vous manipulerez sur un repositor
 		- [Problème pour push](#problème-pour-push)
 		- [Aucun souci](#aucun-souci)
 
+# Installation
+
+Avant de commencer, il faut s'assurer que vous avez l'outil sur votre machine.
+
+Pour vérifier que vous avez Git, faites la commande suivante :
+```shell
+> git --version
+```
+Si vous avez une erreur, alors il faudra l'installer.
+## Windows
+Pour windows, téléchargez l'installeur via [cette page](https://git-scm.com/download/win).
+
+Pas besoin de modifier les paramètres d'installation, laissez par défaut.
+
+## Mac
+Toutes les informations se situent sur [cette page](https://git-scm.com/download/mac).
+
+## Linux
+Les informations sont sur [cette page](https://git-scm.com/download/linux). Prenez bien la commande en fonction de votre distribution.
+
 # Partie 1 - Familiarisation
 ## Objectif
 L'objectif de cette partie est de vous familiariser avec l'outil **Git** afin de comprendre son fonctionnement et de pouvoir l'utiliser dans des projets de groupe.
