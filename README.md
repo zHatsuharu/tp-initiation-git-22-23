@@ -42,7 +42,7 @@ Pour windows, téléchargez l'installeur via [cette page](https://git-scm.com/do
 Pas besoin de modifier les paramètres d'installation, laissez par défaut.
 
 ## Mac
-Toutes les informations se situe sur [cette page](https://git-scm.com/download/mac).
+Toutes les informations se situent sur [cette page](https://git-scm.com/download/mac).
 
 ## Linux
 Les informations sont sur [cette page](https://git-scm.com/download/linux). Prenez bien la commande en fonction de votre distribution.
