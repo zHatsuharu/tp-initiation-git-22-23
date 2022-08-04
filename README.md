@@ -142,7 +142,7 @@ Une fois créé, nous pouvons commencer le TP.
 	>>>>>>> tomate
 	```
 	- L'erreur qu'il y a eue est un **conflit**. **Git** a donc remplacé la ligne contenant le conflit par ce texte.
-	- Le conflit est représenté en 2 parties séparé par des "=".
+	- Le conflit est représenté en 2 parties séparées par des "=".
 		- Sur la partie supérieure représentée par `<<<<<<< HEAD`, il s'agit de la modification qu'il y a sur la branche actuelle, soit la branche **master**.
 		- Sur la partie inférieure représentée par `>>>>>>> tomate`, il s'agit de la modification qu'il y a sur la branche avec laquelle vous voulez effectuer votre merge.
 	- Pour corriger ce conflit, il vous suffit de retirer les parties non désirées.
