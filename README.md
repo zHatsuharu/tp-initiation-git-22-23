@@ -75,7 +75,7 @@ Une fois créé, nous pouvons commencer le TP.
 		- Pour ouvrir le terminal, regardez la partie [Installation](#installation). Une explication rapide s'y trouve.
 		- Vous trouverez les explications de la commande dans la [documentation](./doc/).
 		- Vous trouverez l'url ici :
-		
+
 		![](./images/link_repo.png)
     - Un dossier a dû être créé à l'endroit où vous avez cloné votre repo.
 		- Ouvrez ce dossier avec **Visual Studio Code** (Plus couramment `VScode`).
@@ -132,7 +132,23 @@ Une fois créé, nous pouvons commencer le TP.
 	- À cette étape, vous êtes normalement sur la branche **master**.
 		- Faites une vérification avec la commande `git status`.
 	- Pour fusionner la branche **tomate** avec la branche **master**, faites la commande de merge trouvable dans la [documentation](./doc/).
-14. Oups ! Vous avez un conflit ( ͡° ͜ʖ ͡°)
+14. Oups ! Vous avez un conflit ( ͡° ͜ʖ ͡°) . On va régler ça !
+	- Dans votre fichier `hello.txt` vous devriez avoir ce texte :
+	```
+	<<<<<<< HEAD
+	Say Hello World!
+	=======
+	Good bye World!
+	>>>>>>> tomate
+	```
+	- L'erreur qu'il y a eue est un **conflit**. **Git** a donc remplacé la ligne contenant le conflit par ce texte.
+	- Le conflit est représenté en 2 parties séparé par des "=".
+		- Sur la partie supérieure représentée par `<<<<<<< HEAD`, il s'agit de la modification qu'il y a sur la branche actuelle, soit la branche **master**.
+		- Sur la partie inférieure représentée par `>>>>>>> tomate`, il s'agit de la modification qu'il y a sur la branche avec laquelle vous voulez effectuer votre merge.
+	- Pour corriger ce conflit, il vous suffit de retirer les parties non désirées.
+		- Dans notre cas, on va garder notre `Good bye World!`
+			- Il me faut uniquemment le texte qu'on avait mis dans la branche tomate.
+	- Une fois cela effectuer, vous pouvez faire un commit (`git add`, `git commit`, `git push`).
 
 Bien, maintenant que vous avez fait cette première partie en étant seul, vous allez vous mettre un peu plus dans la plus grande utilisation de Git : un travail de groupe.
 
