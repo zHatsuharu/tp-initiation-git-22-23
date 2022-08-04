@@ -161,23 +161,33 @@ Mettez vous en groupe de **4 à 6 personnes**.
 
 ## Repository du groupe
 Toujours sur **Gitea**, un membre du groupe doit créer un repo (et uniquement un seul membre).
+
+Le repo aura pour nom **tp-git-initiation-groupe**
 > Pour ceux qui ne font pas le repo, suivez quand même cette partie.
 
 Une fois le repo de créé, vous aurez un bouton qui permettra d'accéder aux paramètres du repo en haut à droite :
 
 ![](./images/settings_repo.png)
 
-Dans les paramètres, un onglet **Collaborators** permet de gérer les collaborateurs de votre repo. Ajoutez les autres membres du groupe et mettez-les en **Write**.
+Dans les paramètres, un onglet **Collaborators** permet de gérer les collaborateurs de votre repo :
+
+![](./images/collaborators.png)
+
+Ajoutez les autres membres du groupe et mettez-les en **Write**.
 > `Read` : Peut seulement voir le repo, ne peut pas agir dessus.\
 > `Write` : Peut lire et modifier le repo.\
 > `Administrator` : Peut lire, modifier et changer la configuration du repo.
+
+Vous devriez avoir quelque chose de similaire à ceci :
+
+![](./images/write_collab.png)
 
 ## Manipulation
 > Chaque membre du groupe doit effectuer les étapes de leur côté.
 
 1. Cloner le repository.
-2. Créer un fichier avec pour nom `NOM Prénom`.
-    > Ne mettez pas `NOM Prénom` mais votre nom suivi de votre prénom 👀\
+2. Créer un fichier avec pour nom `NOM Prénom.txt`.
+    > Ne mettez pas `NOM Prénom.txt` mais votre nom suivi de votre prénom 👀\
     > Vous perdrez des points si je remarque ceci dans vos commits.
 3. Ajouter ce fichier au repo.
 
@@ -198,7 +208,7 @@ Cependant, il existe une autre solution pour éviter ces problèmes :
 1. Recréez un nouveau fichier avec cette fois `Prénom NOM`.
 2. Créez une nouvelle branche et la sélectionner.
 3. Ajoutez le fichier au repo sur la branche.
-4. Effectuez un merge.
+4. Effectuez un merge depuis la branche **master**.
 
 ---
 ### Aucun souci
