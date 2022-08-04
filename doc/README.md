@@ -11,7 +11,7 @@ Légende :
 | -------- | -------- | ----------- |
 | `git clone <url>` | `url` : l'url du repository à cloner | Clone un repository distant sur votre pc en local. |
 | `git add <file> [files...]` | `file` : le fichier à ajouter au commit. Peut être remplacé par `*` pour tout ajouter ou par `.` pour ajouter uniquement les fichiers modifiés<br />`files` : les fichiers supplémentaires à ajouter au commit. | Ajoute un ou plusieurs fichiers pour le prochain commit. |
-| `git commit -m <text>` | `text` : Le message de votre commit. | Effectue un commit à votre repo sur la branche actuelle. |
+| `git commit -m <text>` | `text` : Le message de votre commit. Le message doit être entre des guillemets. | Effectue un commit à votre repo sur la branche actuelle. |
 | `git push` | | Met à jour votre repo avec le commit effectué. |
 | `git pull` | | Récupère la dernière version du repo pour mettre à jour les fichiers locaux. |
 | `git revert <hash>` | `hash` : Le hash du commit. | Annule les changements du commit donné en argument.|

@@ -185,14 +185,14 @@ Vous devriez avoir quelque chose de similaire à ceci :
 ## Manipulation
 > Chaque membre du groupe doit effectuer les étapes de leur côté.
 
-1. Cloner le repository.
-2. Créer un fichier avec pour nom `NOM Prénom.txt`.
+1. Clonez le repo qui vient d'être créé.
+2. Créez un fichier avec pour nom `NOM Prénom.txt`.
     > Ne mettez pas `NOM Prénom.txt` mais votre nom suivi de votre prénom 👀\
     > Vous perdrez des points si je remarque ceci dans vos commits.
-3. Ajouter ce fichier au repo.
+3. Ajoutez ce fichier à ce repo.
 
-<details>
-<summary style="cursor: pointer;">La suite une fois que vous aurez fini les étapes du dessus.</summary>
+<details open>
+<summary style="cursor: pointer; font-weight: bold;">La suite une fois que vous aurez fini les étapes du dessus.</summary>
 <br>
 
 Bien, avez vous eu des difficultés ? Par exemple avec le `push` ?\
@@ -205,18 +205,35 @@ C'est tout à fait normal d'avoir des problèmes sur ça. Vous apprendrez à l'u
 La solution basique est qu'à chaque fois qu'une personne effectue un commit, tout le groupe fait un pull avant de faire à nouveau un commit sur la branche main.
 
 Cependant, il existe une autre solution pour éviter ces problèmes :
-1. Recréez un nouveau fichier avec cette fois `Prénom NOM`.
+1. Recréez un nouveau fichier avec cette fois `Prénom NOM.txt`.
 2. Créez une nouvelle branche et la sélectionner.
 3. Ajoutez le fichier au repo sur la branche.
 4. Effectuez un merge depuis la branche **master**.
 
 ---
 ### Aucun souci
-Si vous avez eu aucun souci en effectuant des `git pull` puis des `git push`, veuillez quand même voir la partie **Problème pour push**. Une solution plus adaptée est proposée.
+Si vous avez eu aucun souci en effectuant des `git pull` puis des `git push`, veuillez quand même voir la partie [Problème pour push](#problème-pour-push). Une solution plus adaptée est proposée.
 
-Sinon, bravo ! Vous avez fini le TP !
+Sinon, voici la suite du TP :
+
+À partir de maintenant, dés que vous verrez une étoile (⭐), seulement un membre du groupe doit s'occuper de faire cette étape. Dans le cas contraire, vous verrez des notes de musiques (🎶).
+
+4. ⭐ Créez un fichier `.gitignore` (le nom est important).
+	- Dans ce fichier, écrivez `renard.txt`. (N'oubliez pas d'enregistrer)
+	- Effectuez un commit.
+5. 🎶 Récupérez le fichier en local.
+	- Les autres membres doivent effectuer la commande `git pull`.
+6. ⭐ Créez deux fichiers, l'un qui sera `renard.txt` et l'autre `belette.txt`.
+	- Faites un commit après qu'ils soient créés.
+		- Faites le commit avec un `git add .`
+7. 🎶 Récupérez les fichiers en local (même chose que l'étape 5).
+	- Une fois que vous aurez fait la commande, vous devriez avoir récupérer seulement le fichier `belette.txt`.
+	- Le fichier `.gitignore` a empéché l'envoie de `renard.txt`
+
+Bravo à vous ! vous avez fini le TP !
+
 <details>
-<summary style="cursor: pointer;">Vous avez votre récompense.</summary>
+<summary style="cursor: pointer; font-weight: bold;">Vous avez votre récompense.</summary>
 
 <img src="https://c.tenor.com/P-8ZvqnS4AwAAAAC/dancing-cat-dancing-kitten.gif" width="200" height="200">
 
