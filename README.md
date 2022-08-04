@@ -14,6 +14,10 @@ Le TP se fera en 2 parties. Dans la première, vous manipulerez sur un repositor
 
 - [TP Initiation GIT](#tp-initiation-git)
 	- [Sommaire](#sommaire)
+- [Installation](#installation)
+	- [Windows](#windows)
+	- [Mac](#mac)
+	- [Linux](#linux)
 - [Partie 1 - Familiarisation](#partie-1---familiarisation)
 	- [Objectif](#objectif)
 	- [Création de votre repository](#création-de-votre-repository)
