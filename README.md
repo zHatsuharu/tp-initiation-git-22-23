@@ -89,11 +89,14 @@ Une fois créé, nous pouvons commencer le TP.
 
 	![](./images/new_file.png)
 	- Dans ce fichier écrivez `Hello World!` et enregistrez le.
+	- Effectuez un `git status` pour voir les changements qui ont été effectués en local.
+		- Un joli texte rouge écrit `hello.txt` devrait s'afficher.
 3. Ajoutez ce fichier à votre repo (il doit apparaître sur le repo Gitea 👀).
 	- Vous pouvez vous servir de la [doc](./doc/).
 		- Il s'agit des commandes de bases (`git add`, `git commit`, `git push`)
 			- Ces commandes doivent être utilisées pour envoyer des nouveaux fichiers ou des modifications des fichiers déjà existants.
 		- En exécutant `git commit`, vous aurez certainement une erreur. Allez dans [cette partie](./doc/README.md#erreur-de-commit) pour régler ce problème.
+	- Pour s'assurer que tout est bon, faites un `git status`.
 4. Recréez un autre fichier que vous appelerez `world.txt` et ajoutez le à votre repo.
 5. Maintenant, il faut **revert** votre commit.
     - L'objectif est de revenir un pas en arrière, donc l'étape 4 sera annulée.
@@ -191,7 +194,7 @@ Vous devriez avoir quelque chose de similaire à ceci :
     > Vous perdrez des points si je remarque ceci dans vos commits.
 3. Ajoutez ce fichier à ce repo.
 
-<details open>
+<details>
 <summary style="cursor: pointer; font-weight: bold;">La suite une fois que vous aurez fini les étapes du dessus.</summary>
 <br>
 
@@ -230,7 +233,7 @@ Sinon, voici la suite du TP :
 	- Une fois que vous aurez fait la commande, vous devriez avoir récupérer seulement le fichier `belette.txt`.
 	- Le fichier `.gitignore` a empéché l'envoie de `renard.txt`
 
-Bravo à vous ! vous avez fini le TP !
+Bravo à vous ! Vous avez fini le TP !
 
 <details>
 <summary style="cursor: pointer; font-weight: bold;">Vous avez votre récompense.</summary>
