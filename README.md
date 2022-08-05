@@ -99,6 +99,7 @@ Une fois créé, nous pouvons commencer le TP.
 	- Vous devez vous servir de la [doc](./doc/).
 		- Il s'agit des commandes de bases (`git add`, `git commit`, `git push`)
 			- Ces commandes doivent être utilisées pour envoyer des nouveaux fichiers ou des modifications des fichiers déjà existants.
+			- Pour la commande `git commit`, le message doit contenir les modifications effectuées. Dans notre cas, le message sera `Adding hello.txt`.
 		- En exécutant `git commit`, vous aurez certainement une erreur. Allez dans [cette partie](./doc/README.md#erreur-de-commit) pour régler ce problème.
 	- Pour s'assurer que tout est bon, faites un `git status`.
 4. Recréez un autre fichier que vous appelerez `world.txt` et ajoutez le à votre repo.
@@ -127,6 +128,7 @@ Une fois créé, nous pouvons commencer le TP.
 	- Pour allez plus vite, vous pouvez faire un `git add .`
 		- Cette commande ajoutera toutes les modifications qui ont été effectuées en local.
 		- Le `git add` ne sert pas uniquement à envoyer un nouveau fichier, mais aussi à envoyer les modifications des fichiers déjà existants.
+	- Comme pour l'ajout de `hello.txt`, 
 	- Vous pouvez avoir l'erreur suivante :
 
 	![](./images/push_branch_error.png)
@@ -157,8 +159,9 @@ Une fois créé, nous pouvons commencer le TP.
 		- Sur la partie inférieure représentée par `>>>>>>> tomate`, il s'agit de la modification qu'il y a sur la branche avec laquelle vous voulez effectuer votre merge.
 	- Pour corriger ce conflit, il vous suffit de retirer les parties non désirées.
 		- Dans notre cas, on va garder notre `Good bye World!`
-			- Modifiez à la main le fichier pour garder uniquement ce texte.
+			- Modifiez à la main le fichier pour garder uniquement ce texte. Pensez à enregistrer le fichier.
 	- Une fois cela effectué, vous pouvez faire un commit (`git add`, `git commit`, `git push`).
+		- Pensez à expliquer dans le message de votre commit, les modifications effectuées d'une manière très condensée.
 
 Bien, maintenant que vous avez fait cette première partie en étant seul, vous allez vous mettre un peu plus dans la plus grande utilisation de Git : un travail de groupe.
 
