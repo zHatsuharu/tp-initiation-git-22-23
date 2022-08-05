@@ -75,7 +75,7 @@ Une fois créé, nous pouvons commencer le TP.
 > En cas de souci, une doc récapitulative se situe [ici](./doc/).\
 > À chaque étape, vérifiez votre repo sur Gitea pour confirmer les modifications.
 1. Clonez votre repository.
-	- Sur votre terminal, entrez la commande `git clone <url>`.
+	- Sur votre terminal, entrez la commande `git clone url`.
 		- Pour ouvrir le terminal, regardez la partie [Installation](#installation). Une explication rapide s'y trouve.
 		- Vous trouverez les explications de la commande dans la [documentation](./doc/).
 		- Vous trouverez l'url ici :
@@ -96,7 +96,7 @@ Une fois créé, nous pouvons commencer le TP.
 	- Effectuez un `git status` pour voir les changements qui ont été effectués en local.
 		- Un joli texte rouge écrit `hello.txt` devrait s'afficher.
 3. Ajoutez ce fichier à votre repo (il doit apparaître sur le repo Gitea 👀).
-	- Vous pouvez vous servir de la [doc](./doc/).
+	- Vous devez vous servir de la [doc](./doc/).
 		- Il s'agit des commandes de bases (`git add`, `git commit`, `git push`)
 			- Ces commandes doivent être utilisées pour envoyer des nouveaux fichiers ou des modifications des fichiers déjà existants.
 		- En exécutant `git commit`, vous aurez certainement une erreur. Allez dans [cette partie](./doc/README.md#erreur-de-commit) pour régler ce problème.
@@ -121,9 +121,12 @@ Une fois créé, nous pouvons commencer le TP.
 
 	![](./images/select_branch.png)
 7. Modifiez le fichier `hello.txt`.
-	- Changez le texte par `Good bye World!`.
+	- Changez le texte par `Good bye World!` et enregistrez le fichier.
 8. Créez un nouveau fichier qui aura pour nom `feuille.txt`.
 9. Faites un commit avec ces modifications.
+	- Pour allez plus vite, vous pouvez faire un `git add .`
+		- Cette commande ajoutera toutes les modifications qui ont été effectuées en local.
+		- Le `git add` ne sert pas uniquement à envoyer un nouveau fichier, mais aussi à envoyer les modifications des fichiers déjà existants.
 	- Vous pouvez avoir l'erreur suivante :
 
 	![](./images/push_branch_error.png)
@@ -133,7 +136,7 @@ Une fois créé, nous pouvons commencer le TP.
 	```
 10. Sélectionnez sur la branche **master**.
 11. Faites une modification sur le fichier `hello.txt`.
-	- Remplacez le texte par `Say Hello World!`.
+	- Remplacez le texte par `Say Hello World!` et enregistrez le fichier.
 12. Faites un commit avec vos modifications.
 13. Effectuez un merge avec la branche `tomate`.
 	- À cette étape, vous êtes normalement sur la branche **master**.
@@ -154,8 +157,8 @@ Une fois créé, nous pouvons commencer le TP.
 		- Sur la partie inférieure représentée par `>>>>>>> tomate`, il s'agit de la modification qu'il y a sur la branche avec laquelle vous voulez effectuer votre merge.
 	- Pour corriger ce conflit, il vous suffit de retirer les parties non désirées.
 		- Dans notre cas, on va garder notre `Good bye World!`
-			- Il me faut uniquemment le texte qu'on avait mis dans la branche tomate.
-	- Une fois cela effectuer, vous pouvez faire un commit (`git add`, `git commit`, `git push`).
+			- Modifiez à la main le fichier pour garder uniquement ce texte.
+	- Une fois cela effectué, vous pouvez faire un commit (`git add`, `git commit`, `git push`).
 
 Bien, maintenant que vous avez fait cette première partie en étant seul, vous allez vous mettre un peu plus dans la plus grande utilisation de Git : un travail de groupe.
 
