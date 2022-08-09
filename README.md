@@ -102,7 +102,7 @@ Une fois créé, nous pouvons commencer le TP.
 			> ⚠ Pour les utilisteurs sur **Mac** n'oubliez pas d'ajouter le fichier `.gitignore` !
 			- Ces commandes doivent être utilisées pour envoyer des nouveaux fichiers ou des modifications des fichiers déjà existants.
 			- Pour la commande `git commit`, le message doit contenir les modifications effectuées. Dans notre cas, le message sera `Adding hello.txt`.
-		- En exécutant `git commit`, vous aurez certainement une erreur. Allez dans [cette partie](./doc#erreur-de-commit) pour régler ce problème.
+		- En exécutant `git commit`, vous aurez certainement une erreur. Allez dans [cette partie](https://github.com/zHatsuharu/tp-initiation-git-22-23/tree/main/doc#erreur-de-commit) pour régler ce problème.
 	- Pour s'assurer que tout est bon, faites un `git status`.
 4. Recréez un autre fichier que vous appelerez `world.txt` et ajoutez le à votre repo.
 5. Maintenant, il faut **revert** votre commit.
