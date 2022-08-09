@@ -226,55 +226,32 @@ Vous devriez avoir quelque chose de similaire à ceci :
 ![](./images/write_collab.png)
 
 ## Manipulation
-> Chaque membre du groupe doit effectuer les étapes de leur côté.
 
-1. Clonez le repo qui vient d'être créé.
-2. Créez un fichier avec pour nom `NOM Prénom.txt`.
-    > Ne mettez pas `NOM Prénom.txt` mais votre nom suivi de votre prénom 👀\
-    > Vous perdrez des points si je remarque ceci dans vos commits.
-3. Ajoutez ce fichier à ce repo.
+Pour cette partie du TP, vous serez en autonomie.
+
+Voici l'objectif que vous devez atteindre :
+
+> En bonus : Essayez de faire le moins de commit possible sur la branche `master`.\
+> L'objectif du bonus : Le nombre de membres de votre groupe + 1 = nombre de commits
+1. Le repos doit contenir 1 dossier par membre du groupe.
+	- Chacun doit s'occuper de son dossier.
+	- Le dossier doit s'appeler `NOM Prénom`.
+	> Mettez votre nom et votre prénom, pas NOM Prénom, sinon vous allez perdre des points 👀
+2. Dans chaque dossier, il y aura 2 dossiers.
+	- Un dossier `privé` qui devra être ignorer par le biais d'un `.gitignore`.
+	- Un dossier `publique` qui lui sera dans le repo.
+3. Mettez des fichiers dans vos dossiers.
+	- Un fichier `loutre.txt` doit être dans votre dossier `privé`.
+	- Un fichier `belette.txt` doit être dans votre dossier `publique`.
+4. Tout doit apparaître dans le repo, sauf les dossiers `privé` de chaque membre.
 
 <details>
 <summary style="cursor: pointer; font-weight: bold;">La suite une fois que vous aurez fini les étapes du dessus.</summary>
-<br>
+<br />
 
-Bien, avez vous eu des difficultés ? Par exemple avec le `push` ?\
-Si vous n'avez pas eu de problèmes je vous conseille d'aller directement à l'étape [Aucun souci](#aucun-souci).
+Une fois que vous avez fini, amusez vous avec cette commande `git log --oneline --graph`.
 
----
-### Problème pour push
-C'est tout à fait normal d'avoir des problèmes sur ça. Vous apprendrez à l'utiliser.
-
-La solution basique est qu'à chaque fois qu'une personne effectue un commit, tout le groupe fait un pull avant de faire à nouveau un commit sur la branche main.
-
-Cependant, il existe une autre solution pour éviter ces problèmes :
-1. Créez une nouvelle branche et la sélectionner.
-2. Recréez un nouveau fichier avec cette fois `Prénom NOM.txt`.
-3. Ajoutez le fichier au repo sur la branche.
-4. Effectuez un merge depuis la branche **master**.
-
----
-### Aucun souci
-Si vous avez eu aucun souci en effectuant des `git pull` puis des `git push`, veuillez quand même voir la partie [Problème pour push](#problème-pour-push). Une solution plus adaptée est proposée.
-
-Sinon, voici la suite du TP :
-
-À partir de maintenant, dés que vous verrez une étoile (⭐), seulement un membre du groupe doit s'occuper de faire cette étape. Dans le cas contraire, vous verrez des notes de musiques (🎶).
-
-4. ⭐ Créez un fichier `.gitignore` (le nom est important).
-	- Dans ce fichier, écrivez `renard.txt`. (N'oubliez pas d'enregistrer)
-	- Effectuez un commit.
-5. 🎶 Récupérez le fichier en local.
-	- Les autres membres doivent effectuer la commande `git pull`.
-6. ⭐ Créez deux fichiers, l'un qui sera `renard.txt` et l'autre `belette.txt`.
-	- Faites un commit après qu'ils soient créés.
-		- Faites le commit avec un `git add .`
-7. 🎶 Récupérez les fichiers en local (même chose que l'étape 5).
-	- Une fois que vous aurez fait la commande, vous devriez avoir récupérer seulement le fichier `belette.txt`.
-	- Le fichier `.gitignore` a empéché l'envoie de `renard.txt`
-
-Bravo à vous ! Vous avez fini le TP !
-
+> Il n'y a pas de suite ;)
 <details>
 <summary style="cursor: pointer; font-weight: bold;">Vous avez votre récompense.</summary>
 
