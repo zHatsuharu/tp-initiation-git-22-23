@@ -128,9 +128,9 @@ Une fois créé, nous pouvons commencer le TP.
 	 ! [remote rejected] master -> master (pre-receive hook declined)
 	error: failed to push some refs to 'https://git.ytrack.learn.ynov.com/NOMUTILISATEUR/tp-git-initiation.git'
 	```
-	- Cette erreur est dû au fait que la plateforme n'accèpte pas les fichier `.exe` (les fichiers exécutables)
+	- Cette erreur est due au fait que la plateforme n'accepte pas les fichiers `.exe` (les fichiers exécutables)
 8. Corrigeons cette erreur ! Utilisons le **reset**.
-	- Comme nous n'avons pas pu effectuer l'envoie de notre fichier au repo, nous devons annulé notre commit en cours.
+	- Comme nous n'avons pas pu effectuer l'envoi de notre fichier au repo, nous devons annuler notre commit en cours.
 		- Vous pouvez voir que le commit est en attente de push avec un `git status`.
 	- Servez vous de la [documentation](./doc/).
 		- Nous voulons **revenir seulement d'un commit en arrière** et **retirer les modifications en local**.
