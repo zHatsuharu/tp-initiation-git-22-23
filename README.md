@@ -88,6 +88,9 @@ Une fois créé, nous pouvons commencer le TP.
 		- Vous pouvez ouvrir un terminal dans le menu en haut de VScode :
 
 		![](./images/open_terminal.png)
+
+	> ⚠ Si vous êtes sur **Mac**, vous devez créer un fichier `.gitignore` et écrire dans ce fichier : `.DS_Store`. N'oubliez pas de l'enregistrer.\
+	> Une fois cela effectuer, il faudra l'ajouter à votre repo pendant l'étape 3.
 2. Créez un fichier au nom de `hello.txt` dans le dossier du repository sur votre pc.
 	- Sur **VScode**,  vous pouvez créer un fichier ici :
 
@@ -116,15 +119,31 @@ Une fois créé, nous pouvons commencer le TP.
 		- Pas de panique ! Vous pouvez juste fermez cette page et le commit se fera tout seul.
 		- Il ne vous restera plus qu'à push !
     - Vous devez avoir à ce point, seulement le fichier `hello.txt` de l'étape 3 dans votre repo.
-6. Créez une branche `tomate` et sélectionnez la.
+6. Créez un fichier qui aura pour nom `rouge.exe`
+> ⚠ Le nom est important !
+7. Ajoutez le à votre repo.
+	- Les commandes classiques (`git add`, `git commit`, `git push`).
+	- Normalement, vous ne pourrez pas push, vous aurez un joli texte rouge écrit :
+	```
+	 ! [remote rejected] master -> master (pre-receive hook declined)
+	error: failed to push some refs to 'https://git.ytrack.learn.ynov.com/NOMUTILISATEUR/tp-git-initiation.git'
+	```
+	- Cette erreur est dû au fait que la plateforme n'accèpte pas les fichier `.exe` (les fichiers exécutables)
+8. Corrigeons cette erreur ! Utilisons le **reset**.
+	- Comme nous n'avons pas pu effectuer l'envoie de notre fichier au repo, nous devons annulé notre commit en cours.
+		- Vous pouvez voir que le commit est en attente de push avec un `git status`.
+	- Servez vous de la [documentation](./doc/).
+		- Nous voulons **revenir seulement d'un commit en arrière** et **retirer les modifications en local**.
+	- Une fois la commande effectuée, vous ne devriez plus avoir le fichier `rouge.exe` et la commande `git status` devrez vous dire que vous êtes à jour.
+9. Créez une branche `tomate` et sélectionnez la.
 	- Aidez vous de la [documentation](./doc/) pour ça.
 	- Pour vous assurez que vous avez bien sélectionné la branche, effectuez la commande `git status`. Vous devrez avoir ce résultat :
 
 	![](./images/select_branch.png)
-7. Modifiez le fichier `hello.txt`.
+10. Modifiez le fichier `hello.txt`.
 	- Changez le texte par `Good bye World!` et enregistrez le fichier.
-8. Créez un nouveau fichier qui aura pour nom `feuille.txt`.
-9. Faites un commit avec ces modifications.
+11. Créez un nouveau fichier qui aura pour nom `feuille.txt`.
+12. Faites un commit avec ces modifications.
 	- Pour allez plus vite, vous pouvez faire un `git add .`
 		- Cette commande ajoutera toutes les modifications qui ont été effectuées en local.
 		- Le `git add` ne sert pas uniquement à envoyer un nouveau fichier, mais aussi à envoyer les modifications des fichiers déjà existants.
@@ -136,15 +155,15 @@ Une fois créé, nous pouvons commencer le TP.
 	```shell
 	> git push --set-upstream origin tomate
 	```
-10. Sélectionnez sur la branche **master**.
-11. Faites une modification sur le fichier `hello.txt`.
+13. Sélectionnez sur la branche **master**.
+14. Faites une modification sur le fichier `hello.txt`.
 	- Remplacez le texte par `Say Hello World!` et enregistrez le fichier.
-12. Faites un commit avec vos modifications.
-13. Effectuez un merge avec la branche `tomate`.
+15. Faites un commit avec vos modifications.
+16. Effectuez un merge avec la branche `tomate`.
 	- À cette étape, vous êtes normalement sur la branche **master**.
 		- Faites une vérification avec la commande `git status`.
 	- Pour fusionner la branche **tomate** avec la branche **master**, faites la commande de merge trouvable dans la [documentation](./doc/).
-14. Oups ! Vous avez un conflit ( ͡° ͜ʖ ͡°) . On va régler ça !
+17. Oups ! Vous avez un conflit ( ͡° ͜ʖ ͡°) . On va régler ça !
 	- Dans votre fichier `hello.txt` vous devriez avoir ce texte :
 	```
 	<<<<<<< HEAD
@@ -173,7 +192,7 @@ Dans cette deuxième partie, vous allez devoir utiliser Git en groupe. Ainsi, vo
 Mettez vous en groupe de **4 à 6 personnes**.
 
 ## Repository du groupe
-Toujours sur **Gitea**, un membre du groupe doit créer un repo (et uniquement un seul membre).
+Toujours sur **Gitea**, un membre du groupe doit créer un repo (et uniquement un seul membre). Vous pouvez returner à la partie [Création de votre repository](#création-de-votre-repository) si besoin.
 
 Le repo aura pour nom **tp-git-initiation-groupe**
 > Pour ceux qui ne font pas le repo, suivez quand même cette partie.
@@ -218,8 +237,8 @@ C'est tout à fait normal d'avoir des problèmes sur ça. Vous apprendrez à l'u
 La solution basique est qu'à chaque fois qu'une personne effectue un commit, tout le groupe fait un pull avant de faire à nouveau un commit sur la branche main.
 
 Cependant, il existe une autre solution pour éviter ces problèmes :
-1. Recréez un nouveau fichier avec cette fois `Prénom NOM.txt`.
-2. Créez une nouvelle branche et la sélectionner.
+1. Créez une nouvelle branche et la sélectionner.
+2. Recréez un nouveau fichier avec cette fois `Prénom NOM.txt`.
 3. Ajoutez le fichier au repo sur la branche.
 4. Effectuez un merge depuis la branche **master**.
 

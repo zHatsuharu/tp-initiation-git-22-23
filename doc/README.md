@@ -15,6 +15,7 @@ Légende :
 | `git commit -m <text>` | `text` : Le message de votre commit. Le message doit être entre des guillemets.<br /> Exemple : `git commit -m "mon commit"` | Effectue un commit à votre repo sur la branche actuelle. |
 | `git push` | | Met à jour votre repo avec le commit effectué. |
 | `git pull` | | Récupère la dernière version du repo pour mettre à jour les fichiers locaux. |
+| `git reset <target> [flag]` | `target` : la source auquel vous allez agir.<br />La source principale à mettre est `HEAD`.<br />Elle doit être accompagner d'un `^` pour revnir seulement d'un commit ou de `~<index>` avec `index` = le nombre de commit à revenir en arrière.<br />`flag` : dans cette doc, nous verrons que 3 flags : `--soft`, `--mixed`, `--hard`.<br />`--soft` : retire seulement sur l'historique des commits.<br />`--mixed` : retire dans l'historique des commits et dans la snapshot.<br />`--hard` : retire dans l'historique, la snapshot et les modifications en local.<br />Exemple : `git reset HEAD^ --hard` | Annule les changements du ou des commits. |
 | `git revert <hash>` | `hash` : Le hash du commit. | Annule les changements du commit donné en argument.|
 | `git branch <name>` | `name` : Le nom de la branche. | Crée une nouvelle branche. |
 | `git checkout <name>` | `name` : Le nom de la branche. | Selectionne la branche sur laquelle vous allez agir. |
