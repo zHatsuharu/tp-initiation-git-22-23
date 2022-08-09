@@ -227,10 +227,7 @@ Vous devriez avoir quelque chose de similaire à ceci :
 
 Pour cette partie du TP, vous serez en autonomie.
 
-Voici l'objectif que vous devez atteindre :
-
-> En bonus : Essayez de faire le moins de commit possible sur la branche `master`.\
-> L'objectif du bonus : Le nombre de membres de votre groupe + 1 = nombre de commits
+Voici les étapes de votre TP :
 1. Le repos doit contenir 1 dossier par membre du groupe.
 	- Chacun doit s'occuper de son dossier.
 	- Le dossier doit s'appeler `NOM Prénom`.
@@ -242,6 +239,8 @@ Voici l'objectif que vous devez atteindre :
 	- Un fichier `loutre.txt` doit être dans votre dossier `privé`.
 	- Un fichier `belette.txt` doit être dans votre dossier `publique`.
 4. Tout doit apparaître dans le repo, sauf les dossiers `privé` de chaque membre.
+> En bonus : Essayez de faire le moins de commit possible sur la branche `master`.\
+> L'objectif du bonus : Le nombre de membres de votre groupe + 1 = nombre de commits
 
 <details>
 <summary style="cursor: pointer; font-weight: bold;">La suite une fois que vous aurez fini les étapes du dessus.</summary>
