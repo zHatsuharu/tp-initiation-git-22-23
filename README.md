@@ -26,8 +26,6 @@ Le TP se fera en 2 parties. Dans la première, vous manipulerez sur un repositor
 	- [Objectif](#objectif-1)
 	- [Repository du groupe](#repository-du-groupe)
 	- [Manipulation](#manipulation-1)
-		- [Problème pour push](#problème-pour-push)
-		- [Aucun souci](#aucun-souci)
 
 # Installation
 
@@ -237,8 +235,8 @@ Voici l'objectif que vous devez atteindre :
 	- Chacun doit s'occuper de son dossier.
 	- Le dossier doit s'appeler `NOM Prénom`.
 	> Mettez votre nom et votre prénom, pas NOM Prénom, sinon vous allez perdre des points 👀
-2. Dans chaque dossier, il y aura 2 dossiers.
-	- Un dossier `privé` qui devra être ignorer par le biais d'un `.gitignore`.
+2. Dans chaque dossier, il y aura 2 autres dossiers.
+	- Un dossier `privé` qui devra être ignoré par le biais d'un `.gitignore`.
 	- Un dossier `publique` qui lui sera dans le repo.
 3. Mettez des fichiers dans vos dossiers.
 	- Un fichier `loutre.txt` doit être dans votre dossier `privé`.
@@ -251,7 +249,7 @@ Voici l'objectif que vous devez atteindre :
 
 Une fois que vous avez fini, amusez vous avec cette commande `git log --oneline --graph`.
 
-> Il n'y a pas de suite ;)
+> Il n'y a pas de suite, je rigolais 👀
 <details>
 <summary style="cursor: pointer; font-weight: bold;">Vous avez votre récompense.</summary>
 
