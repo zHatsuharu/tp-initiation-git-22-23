@@ -101,6 +101,7 @@ Une fois créé, nous pouvons commencer le TP.
 3. Ajoutez ce fichier à votre repo (il doit apparaître sur le repo Gitea 👀).
 	- Vous devez vous servir de la [doc](./doc/).
 		- Il s'agit des commandes de bases (`git add`, `git commit`, `git push`)
+			> ⚠ Pour les utilisteurs sur **Mac** n'oubliez pas d'ajouter le fichier `.gitignore` !
 			- Ces commandes doivent être utilisées pour envoyer des nouveaux fichiers ou des modifications des fichiers déjà existants.
 			- Pour la commande `git commit`, le message doit contenir les modifications effectuées. Dans notre cas, le message sera `Adding hello.txt`.
 		- En exécutant `git commit`, vous aurez certainement une erreur. Allez dans [cette partie](./doc/README.md#erreur-de-commit) pour régler ce problème.
@@ -133,17 +134,27 @@ Une fois créé, nous pouvons commencer le TP.
 	- Comme nous n'avons pas pu effectuer l'envoi de notre fichier au repo, nous devons annuler notre commit en cours.
 		- Vous pouvez voir que le commit est en attente de push avec un `git status`.
 	- Servez vous de la [documentation](./doc/).
-		- Nous voulons **revenir seulement d'un commit en arrière** et **retirer les modifications en local**.
-	- Une fois la commande effectuée, vous ne devriez plus avoir le fichier `rouge.exe` et la commande `git status` devrez vous dire que vous êtes à jour.
-9. Créez une branche `tomate` et sélectionnez la.
+		- Nous voulons **revenir seulement d'un commit en arrière**, **garder les modifications en local** et **les retirer de la snapshot**.
+	- Une fois la commande effectuée, la commande `git status` devrez vous renvoyez ce message :
+
+	![](./images/exe_reset.png)
+9. Finissons en avec ce `rouge.exe` ! Ignorons le du repo.
+	- Pour ignorer un fichier, les utilisateurs **Mac** l'ont déjà fait depuis le départ.
+	- Vous devez créer un fichier `.gitignore` s'il n'existe pas. Ce fichier aura une liste de fichiers / documents à ne pas envoyer à votre repo.
+	- Dans ce fichier, écrivez `rouge.exe` et enregistrez le.
+		> Pour ceux qui sont sur **Mac**, ajoutez une ligne et écrivez `rouge.exe`.
+	- Ajoutez ce fichier à votre repo.
+		> ⚠ Utilisez `git add .` ! Vous verrez l'utilité du `.gitignore` ainsi.
+	- Si tout marche bien, vous devriez avoir pu push et dans votre repo, vous ne devriez pas avoir le fichier `rouge.exe`.
+10. Créez une branche `tomate` et sélectionnez la.
 	- Aidez vous de la [documentation](./doc/) pour ça.
 	- Pour vous assurez que vous avez bien sélectionné la branche, effectuez la commande `git status`. Vous devrez avoir ce résultat :
 
 	![](./images/select_branch.png)
-10. Modifiez le fichier `hello.txt`.
+11. Modifiez le fichier `hello.txt`.
 	- Changez le texte par `Good bye World!` et enregistrez le fichier.
-11. Créez un nouveau fichier qui aura pour nom `feuille.txt`.
-12. Faites un commit avec ces modifications.
+12. Créez un nouveau fichier qui aura pour nom `feuille.txt`.
+13. Faites un commit avec ces modifications.
 	- Pour allez plus vite, vous pouvez faire un `git add .`
 		- Cette commande ajoutera toutes les modifications qui ont été effectuées en local.
 		- Le `git add` ne sert pas uniquement à envoyer un nouveau fichier, mais aussi à envoyer les modifications des fichiers déjà existants.
@@ -155,15 +166,15 @@ Une fois créé, nous pouvons commencer le TP.
 	```shell
 	> git push --set-upstream origin tomate
 	```
-13. Sélectionnez sur la branche **master**.
-14. Faites une modification sur le fichier `hello.txt`.
+14. Sélectionnez sur la branche **master**.
+15. Faites une modification sur le fichier `hello.txt`.
 	- Remplacez le texte par `Say Hello World!` et enregistrez le fichier.
-15. Faites un commit avec vos modifications.
-16. Effectuez un merge avec la branche `tomate`.
+16. Faites un commit avec vos modifications.
+17. Effectuez un merge avec la branche `tomate`.
 	- À cette étape, vous êtes normalement sur la branche **master**.
 		- Faites une vérification avec la commande `git status`.
 	- Pour fusionner la branche **tomate** avec la branche **master**, faites la commande de merge trouvable dans la [documentation](./doc/).
-17. Oups ! Vous avez un conflit ( ͡° ͜ʖ ͡°) . On va régler ça !
+18. Oups ! Vous avez un conflit ( ͡° ͜ʖ ͡°) . On va régler ça !
 	- Dans votre fichier `hello.txt` vous devriez avoir ce texte :
 	```
 	<<<<<<< HEAD
