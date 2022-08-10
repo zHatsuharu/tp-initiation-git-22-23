@@ -20,7 +20,7 @@ Légende :
 | `git branch <name>` | `name` : Le nom de la branche. | Crée une nouvelle branche. |
 | `git checkout <name>` | `name` : Le nom de la branche. | Selectionne la branche sur laquelle vous allez agir. |
 | `git merge <name>` | `name` : Le nom de la branche. | Choisit une branche qui va fusionner avec la branche actuellement sélectionnée. |
-| `git status` | | Donne l'état du répertoire local. Les informations essentielles sont : la branche active, les diffences entre le repo disatant et le repo local. |
+| `git status` | | Donne l'état du répertoire local. Les informations essentielles sont : la branche active, les diffences entre le repo distant et le repo local. |
 | `git reset --hard origin/master` | | Rebase le repository local à celui distant. |
 
 # Erreur de commit
