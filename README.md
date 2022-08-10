@@ -3,7 +3,7 @@
 Bienvenu·e sur Github !
 
 Je vous fais vite fait un petit récap de ce qu'est **Git** :
-> Git est un outil pour versionner vos projets. Vous envoyez votre projet dans un **repository** (similaire à des dossiers) sur des platformes tel que Github, Gitlab ou *Gitea* dans le cas d'YNOV. Ainsi vous pouvez partager ou encore travailler à plusieurs sur vos projets.
+> Git est un outil pour versionner vos projets. Vous envoyez votre projet dans un **repository** (similaire à des dossiers) sur des platformes telles que Github, Gitlab ou *Gitea* dans le cas d'YNOV. Ainsi vous pouvez partager ou encore travailler à plusieurs sur vos projets.
 
 Dans ce TP, vous appliquerez les notions vues précédemment. Ainsi vous comprendrez un peu mieux le fonctionnement des commandes.
 
@@ -80,7 +80,7 @@ Une fois créé, nous pouvons commencer le TP.
 
 		![](./images/link_repo.png)
     - Un dossier a dû être créé à l'endroit où vous avez cloné votre repo.
-		- Ouvrez ce dossier avec **Visual Studio Code** (Plus couramment `VScode`).
+		- Ouvrez ce dossier avec **Visual Studio Code** (plus couramment `VScode`).
 		- Vous pouvez télécharger VScode ici : [<img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" width="20%">](https://code.visualstudio.com/download)
 	- Toutes les étapes qui vont suivre se feront sur **VScode**.
 		- Vous pouvez ouvrir un terminal dans le menu en haut de VScode :
@@ -88,7 +88,7 @@ Une fois créé, nous pouvons commencer le TP.
 		![](./images/open_terminal.png)
 
 	> ⚠ Si vous êtes sur **Mac**, vous devez créer un fichier `.gitignore` et écrire dans ce fichier : `.DS_Store`. N'oubliez pas de l'enregistrer.\
-	> Une fois cela effectuer, il faudra l'ajouter à votre repo pendant l'étape 3.
+	> Une fois cela effectué, il faudra l'ajouter à votre repo pendant l'étape 3.
 2. Créez un fichier au nom de `hello.txt` dans le dossier du repository sur votre pc.
 	- Sur **VScode**,  vous pouvez créer un fichier ici :
 
@@ -112,10 +112,10 @@ Une fois créé, nous pouvons commencer le TP.
 
 		![](./images/where_hash.png)
 		- Sinon, vous pouvez cliquer sur `Commits` pour lister vos commits avec les hash de chacun.
-		- Quand vous allez exécuté la commande, vous aurez ceci :
+		- Quand vous allez exécuter la commande, vous aurez ceci :
 
 		![](./images/revert_commit.png)
-		- Pas de panique ! Vous pouvez juste fermez cette page et le commit se fera tout seul.
+		- Pas de panique ! Vous pouvez juste fermer cette page et le commit se fera tout seul.
 		- Il ne vous restera plus qu'à push !
     - Vous devez avoir à ce point, seulement le fichier `hello.txt` de l'étape 3 dans votre repo.
 6. Créez un fichier qui aura pour nom `rouge.exe`
@@ -131,31 +131,31 @@ Une fois créé, nous pouvons commencer le TP.
 8. Corrigeons cette erreur ! Utilisons le **reset**.
 	- Comme nous n'avons pas pu effectuer l'envoi de notre fichier au repo, nous devons annuler notre commit en cours.
 		- Vous pouvez voir que le commit est en attente de push avec un `git status`.
-	- Servez vous de la [documentation](./doc/).
+	- Servez-vous de la [documentation](./doc/).
 		- Nous voulons **revenir seulement d'un commit en arrière**, **garder les modifications en local** et **les retirer de la snapshot**.
-	- Une fois la commande effectuée, la commande `git status` devrez vous renvoyez ce message :
+	- Une fois la commande effectuée, la commande `git status` devrait vous renvoyer ce message :
 
 	![](./images/exe_reset.png)
-9. Finissons en avec ce `rouge.exe` ! Ignorons le du repo.
+9. Finissons-en avec ce `rouge.exe` ! Ignorons-le du repo.
 	- Pour ignorer un fichier, les utilisateurs **Mac** l'ont déjà fait depuis le départ.
-	- Vous devez créer un fichier `.gitignore` s'il n'existe pas. Ce fichier aura une liste de fichiers / documents à ne pas envoyer à votre repo.
-	- Dans ce fichier, écrivez `rouge.exe` et enregistrez le.
+	- Vous devez créer un fichier `.gitignore` s'il n'existe pas. Ce fichier aura une liste de fichiers / documents à ne pas envoyer vers votre repo.
+	- Dans ce fichier, écrivez `rouge.exe` et enregistrez-le.
 		> Pour ceux qui sont sur **Mac**, ajoutez une ligne et écrivez `rouge.exe`.
 	- Ajoutez ce fichier à votre repo.
 		> ⚠ Utilisez `git add .` ! Vous verrez l'utilité du `.gitignore` ainsi.
-	- Si tout marche bien, vous devriez avoir pu push et dans votre repo, vous ne devriez pas avoir le fichier `rouge.exe`.
+	- Si tout marche bien, vous devriez pouvoir push, et dans votre repo, vous ne devriez pas avoir le fichier `rouge.exe`.
 10. Créez une branche `tomate` et sélectionnez la.
-	- Aidez vous de la [documentation](./doc/) pour ça.
-	- Pour vous assurez que vous avez bien sélectionné la branche, effectuez la commande `git status`. Vous devrez avoir ce résultat :
+	- Aidez-vous de la [documentation](./doc/) pour ça.
+	- Pour vous assurer que vous avez bien sélectionné la branche, effectuez la commande `git status`. Vous devriez avoir ce résultat :
 
 	![](./images/select_branch.png)
 11. Modifiez le fichier `hello.txt`.
 	- Changez le texte par `Good bye World!` et enregistrez le fichier.
 12. Créez un nouveau fichier qui aura pour nom `feuille.txt`.
 13. Faites un commit avec ces modifications.
-	- Pour allez plus vite, vous pouvez faire un `git add .`
+	- Pour aller plus vite, vous pouvez faire un `git add .`
 		- Cette commande ajoutera toutes les modifications qui ont été effectuées en local.
-		- Le `git add` ne sert pas uniquement à envoyer un nouveau fichier, mais aussi à envoyer les modifications des fichiers déjà existants.
+		- Le `git add` ne sert pas uniquement à ajouter un nouveau fichier, mais aussi à ajouter les modifications des fichiers déjà existants.
 	- Comme pour l'ajout de `hello.txt`, 
 	- Vous pouvez avoir l'erreur suivante :
 
@@ -181,7 +181,7 @@ Une fois créé, nous pouvons commencer le TP.
 	Good bye World!
 	>>>>>>> tomate
 	```
-	- L'erreur qu'il y a eue est un **conflit**. **Git** a donc remplacé la ligne contenant le conflit par ce texte.
+	- L'erreur qu'il y a est un **conflit**. **Git** a donc remplacé la ligne contenant le conflit par ce texte.
 	- Le conflit est représenté en 2 parties séparées par des "=".
 		- Sur la partie supérieure représentée par `<<<<<<< HEAD`, il s'agit de la modification qu'il y a sur la branche actuelle, soit la branche **master**.
 		- Sur la partie inférieure représentée par `>>>>>>> tomate`, il s'agit de la modification qu'il y a sur la branche avec laquelle vous voulez effectuer votre merge.
@@ -228,7 +228,7 @@ Vous devriez avoir quelque chose de similaire à ceci :
 Pour cette partie du TP, vous serez en autonomie.
 
 Voici les étapes de votre TP :
-1. Le repos doit contenir 1 dossier par membre du groupe.
+1. Le repo doit contenir 1 dossier par membre du groupe.
 	- Chacun doit s'occuper de son dossier.
 	- Le dossier doit s'appeler `NOM Prénom`.
 	> Mettez votre nom et votre prénom, pas NOM Prénom, sinon vous allez perdre des points 👀
